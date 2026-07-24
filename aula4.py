@@ -46,6 +46,5 @@ if texto_usuario:
 
     st.chat_message("assistant").write(texto_resposta_ia)
     mensagem_ia = {"role": "assistant", "content": texto_resposta_ia}
-    st.session_state["lista_mensagens"].append(resposta_ia)
-
+    st.session_state["lista_mensagens"].append(mensagem_ia)
     # print(st.session_state["lista_mensagens"])
